@@ -774,11 +774,16 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   processingDelay @29 :Float32;
 
   enum LongitudinalPlanSource {
-    cruise @0;
+    cruiseDEPRECATED @0;
     mpc1 @1;
     mpc2 @2;
     mpc3 @3;
     model @4;
+    dynamicSpeed @5;
+    curveSlowdown @6;
+    cruiseGas @7;
+    cruiseCoast @8;
+    cruiseBrake @9;
   }
 
   # deprecated
