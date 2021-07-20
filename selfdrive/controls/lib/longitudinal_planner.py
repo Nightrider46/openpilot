@@ -92,7 +92,7 @@ class Planner():
 
   def choose_solution(self, v_cruise_setpoint, enabled):
       if enabled:
-      solutions = {self.cruise_source: self.v_cruise}
+        solutions = {self.cruise_source: self.v_cruise}
       if self.mpc1.prev_lead_status:
         solutions[Source.mpc1] = self.mpc1.v_mpc
       if self.mpc2.prev_lead_status:
