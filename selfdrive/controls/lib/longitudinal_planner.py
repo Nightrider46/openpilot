@@ -112,7 +112,7 @@ class Planner():
         self.v_acc = self.v_cruise
         self.a_acc = self.a_cruise
 
-  self.v_acc_future = min([self.mpc1.v_mpc_future, self.mpc2.v_mpc_future, v_cruise_setpoint])
+    self.v_acc_future = min([self.mpc1.v_mpc_future, self.mpc2.v_mpc_future, v_cruise_setpoint])
 
   def choose_cruise(self, v_ego, a_ego, v_cruise_setpoint, accel_limits_turns, jerk_limits, gasbrake):
         # WARNING: Logic is carefully verified. On change, review test_longitudinal.py output!
